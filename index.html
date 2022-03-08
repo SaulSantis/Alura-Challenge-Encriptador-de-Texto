@@ -10,36 +10,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Encriptador de Texto Alura One</title>
 </head>
 
 <body>
     <main>
-        <section class="encriptador">
+        <section>
             <h1 class="titulo-principal">ENCRIPTADOR DE TEXTO</h1>
             <h2 class="descripcion">Con el programa de encriptación de Alura One podrás crear mensajes secretos para
                 enviarlos a tus
                 amigos.</h2>
-            <textarea class="textarea-encriptar" cols="58" rows="6"
-                placeholder=" Ingresa tu texto aquí, para encriptar o desencriptar un mensaje."
+            <textarea name="" class="textarea-encriptar" cols="58" rows="6"
+                placeholder="Ingresa tu texto aquí, para encriptar o desencriptar un mensaje."
                 style="text-transform:lowercase;"></textarea>
+
             <h3 class="instrucciones">Solo podrás ingresar letras minúsculas sin acento ni caracteres especiales.</h3>
-            <button class="btn-Encriptar">ENCRIPTAR</button>
-            <button class="btn-Desencriptar">DESENCRIPTAR</button>
+            <div class="botones-encriptador">
+                <button class="btn-Encriptar">ENCRIPTAR</button>
+                <button class="btn-Desencriptar">DESENCRIPTAR</button>
+            </div>
         </section>
 
-        <section class="encriptado">
+        <section>
             <h2 class="subtitulo">MENSAJE ENCRIPTADO</h2>
-            <textarea name="" class="textAreaMensaje" cols="58" rows="6"
-                placeholder="Ningún mensaje fue encontrado."></textarea>
-            <button class="botonCopiar">COPIAR MENSAJE</button>
+                <textarea name="" class="text-area-mensaje" cols="58" rows="6"
+                    placeholder="Ningún mensaje fue encontrado."></textarea>
+            <div class="botonCopiar">
+                <button class="btnCopiar">COPIAR MENSAJE</button>
+
+            </div>
         </section>
 
-        <footer>
-            <p>ORACLE + ALURA LATAM - ALURA CHALLENGES &copy COPYRIGHT SANTISTUDIO</p>
-        </footer>
     </main>
+    <footer>
+        <p>ORACLE + ALURA LATAM - ALURA CHALLENGES &copy COPYRIGHT SANTISTUDIO</p>
+    </footer>
 </body>
 
 </html>
