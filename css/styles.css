@@ -4,15 +4,13 @@
   padding: 0;
 }
 
-html {
-  min-height: 100%;
-  position: relative;
-}
-
 body {
   background-image: url(../img/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 section {
@@ -164,45 +162,118 @@ textarea {
 
 footer {
   background-color: rgba(0, 0, 0, 0.541);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
+  padding: 32px 0;
+  text-align: center;
+  margin-top: auto;
   color: white;
 }
 
 footer p {
-  padding: 20px;
-  text-align: center;
   font-size: 0.9rem;
   font-weight: 200;
 }
 
 /* Responsive design - adaptable a dispositivos moviles */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 320px) {
   main {
-    margin: 130px 25px;
+    width: 290px;
+    margin: 25px auto;
   }
-  footer p {
+  .titulo-principal {
+    font-size: 1.5rem;
+  }
+  .descripcion {
+    width: 260px;
+    font-size: 0.9rem;
+  }
+  textarea {
+    width: 250px;
+  }
+  .textarea-encriptar::placeholder {
+    font-size: 0.6rem;
+  }
+  .instrucciones {
+    width: 290px;
+  }
+  .subtitulo {
+    font-size: 1rem;
+    margin-top: 35px;
+  }
+  .text-area-mensaje::placeholder {
     font-size: 0.7rem;
   }
+
+  footer p {
+    font-size: 0.8rem;
+  }
 }
+
 @media screen and (min-width: 768px) {
   main {
-    margin: 150px 150px 150px 160px;
+    width: 400px;
+    margin: 90px 0 90px 190px;
+  }
+  .titulo-principal {
+    width: 400px;
+    font-size: 2.1rem;
+  }
+  .descripcion {
+    width: 400px;
+    font-size: 1.2rem;
+  }
+  textarea {
+    width: 370px;
+  }
+  .textarea-encriptar::placeholder {
+    font-size: 0.7rem;
+  }
+  .instrucciones {
+    width: 400px;
+    font-size: 0rem;
+  }
+  .subtitulo {
+    font-size: 1.2rem;
+    margin-top: 35px;
+  }
+  .text-area-mensaje::placeholder {
+    font-size: 0.8rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    width: 450px;
+    margin: 120px 0 90px 300px;
+  }
+  .titulo-principal {
+    width: 450px;
+    font-size: 2.4rem;
+  }
+  .descripcion {
+    width: 450px;
+    font-size: 1.2rem;
+  }
+  textarea {
+    width: 420px;
+  }
+  .textarea-encriptar::placeholder {
+    font-size: 0.7rem;
+  }
+  .instrucciones {
+    width: 400px;
+    font-size: 0.9rem;
+  }
+  .subtitulo {
+    font-size: 1.4rem;
+  }
+  .text-area-mensaje::placeholder {
+    font-size: 0.9rem;
   }
   footer p {
     font-size: 0.9rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  main {
-    margin: 150px 280px 150px 280px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  main {
-    margin: 150px 280px;
   }
 }
