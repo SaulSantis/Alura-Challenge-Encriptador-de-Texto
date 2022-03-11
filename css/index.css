@@ -29,23 +29,25 @@ section {
   font-weight: 300;
 }
 
-input{
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
   margin-top: 15px;
   width: 100px;
   height: 100px;
   border: 0px;
   outline: none;
-  color: #333333;
+  color: #a0a0a0;
   border-radius: 10px;
   box-shadow: 9px 9px 20px -9px rgba(0, 0, 0, 0.55);
   padding: 15px;
 }
 
-.input-encriptar::placeholder {
-  
+.caja-encriptar::placeholder {
   font-size: 0.8rem;
-  color: #bbbbbb;
-  
+  font-weight: 300;
+  color: #a0a0a0;
 }
 
 .instrucciones {
@@ -124,9 +126,10 @@ input{
   margin-top: 30px;
 }
 
-.input-mensaje::placeholder {
+.caja-mensaje::placeholder {
   font-size: 0.8rem;
-  color: #bbbbbb;
+  font-weight: 300;
+  color: #a0a0a0;
 }
 
 .botonCopiar {
@@ -189,11 +192,11 @@ footer p {
     width: 260px;
     font-size: 0.9rem;
   }
-  input {
+  textarea {
     width: 260px;
     height: 100px;
   }
-  .input-encriptar::placeholder {
+  .caja-encriptar::placeholder {
     font-size: 0.7rem;
   }
   .instrucciones {
@@ -225,11 +228,11 @@ footer p {
     width: 390px;
     font-size: 1.2rem;
   }
-  input {
+  textarea {
     width: 370px;
     height: 120px;
   }
-  .input-encriptar::placeholder {
+  .caja-encriptar::placeholder {
     font-size: 0.8rem;
   }
   .instrucciones {
@@ -261,11 +264,11 @@ footer p {
     width: 450px;
     font-size: 1.2rem;
   }
-  input {
+  textarea {
     width: 420px;
     height: 120px;
   }
-  .input-encriptar::placeholder {
+  .caja-encriptar::placeholder {
     font-size: 0.9rem;
   }
   .instrucciones {
