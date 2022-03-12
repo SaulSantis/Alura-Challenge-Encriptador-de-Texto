@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Encriptador de Texto Alura One</title>
 </head>
 
@@ -21,7 +22,7 @@
             <h2 class="descripcion">Con el programa de encriptación de Alura One podrás crear mensajes secretos para
                 enviarlos a tus
                 amigos.</h2>
-            <textarea class="caja-encriptar"
+            <textarea class="caja-encriptar" spellcheck="false"
                 placeholder="Ingresa tu texto aquí, para encriptar o desencriptar un mensaje."></textarea>
             <h3 class="instrucciones">Solo podrás ingresar letras minúsculas sin acento ni caracteres especiales.</h3>
             <div class="botones-encriptador">
@@ -32,10 +33,10 @@
 
         <section>
             <h2 class="subtitulo">MENSAJE ENCRIPTADO</h2>
-            <textarea class="caja-mensaje" placeholder="Ningún mensaje fue encontrado."></textarea>
+            <textarea class="caja-mensaje" id="cajaMensaje" spellcheck="false" placeholder="Ningún mensaje fue encontrado."></textarea>
             <div class="botonCopiar">
-                <button type="submit" class="btnCopiar">COPIAR MENSAJE</button>
-
+                <button type="submit" class="btnCopiar" id="btnCopiar">COPIAR MENSAJE</button>
+                <button  class="btnLimpiar" id="btnLimpiar">LIMPIAR TODO</button>
             </div>
         </section>
 
