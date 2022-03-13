@@ -15,7 +15,7 @@ function soloMinusculas(texto) {
   } else {
     swal(
       "¡Opss! lo sentimos.",
-      "No se permiten textos vacíos, letras minúsculas, números ni caracteres especiales. ¡Inténtalo otra vez!",
+      "No se permiten textos vacíos, letras mayúsculas, números ni caracteres especiales. ¡Inténtalo otra vez!",
       "warning"
     );
     ingresoTexto.focus();
